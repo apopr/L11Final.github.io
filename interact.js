@@ -1,0 +1,9 @@
+function enterName()
+{
+    let name = document.getElementById("name").value;
+    let message = document.getElementById("email").value;
+    let greeting = document.getElementById("greeting");
+    let briefMessage = document.getElementById("message");
+
+    greeting.innerHTML = "Thank you " + name + "!";
+}

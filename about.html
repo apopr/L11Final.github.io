@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="interact.js"></script>
 
 </head>
 <body>
@@ -43,7 +42,7 @@
                     I earned my Associate's degree in art in 2024 and I am currently studying design and 
                     will earn my Bachelor's degree in approximately 2028. 
                 </p>  
-                <img src="images/arliseSelfPortrait.PNG" height="300" width="450" alt="Arlise painting a self portrait.">
+                <img src="images/arliseSelfPortrait.PNG" height="300" width="450" alt="Arlise Popruzuk painting a self portrait (Arlise Popruzuk 2025).">
             </br>
                 <p>
                     I have been painting with watercolors since middle school and acrylic since high school.
@@ -55,19 +54,21 @@
             <hr>
             
             <h3>Contact</h3>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name">
-            </br>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Email">
-            </br>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Send a message..." style="height: 100px;"></textarea>
-            </br>
-                <input type="submit" value="Submit">
-            </form>
-
+                <form action="https://apopr.github.io/L11Final.github.io/" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                </br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </br>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Send a message..." style="height: 100px;"></textarea>
+                    <button type="button" class="btn btn-info" value="Submit" onclick="enterName()">Submit</button>
+                </form>
+                
+                </br>
+                 <p id="greeting">Thanks User!</p>
+        
         </div>
 
         <div class="footer">
@@ -75,5 +76,6 @@
         </div>
 
     </div>
+        <script src="interact.js"></script>
 </body>
 </html>
