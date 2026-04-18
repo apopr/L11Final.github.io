@@ -2,14 +2,19 @@ body{
     background: linear-gradient(45deg, rgb(255, 159, 210), rgb(248, 139, 215), rgb(249, 249, 153), rgb(148, 249, 163), rgb(209, 232, 255), rgb(201, 126, 254), rgb(255, 143, 255));
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-h1{
+h5{
+    font-family: cursive;
+    text-align: center;
+    color: rgb(45, 74, 179);
+}
+h3{
     text-shadow: 2px 2px 3px rgb(133, 155, 92);
 }
 .navbar-brand{
     font-family: cursive;
     font-size: x-large;
 }
-h4, h2, h3{
+h4, h3{
     font-family: cursive;
     text-align: center;
     color: rgb(45, 74, 179);
@@ -97,9 +102,6 @@ figcaption{
 }
 .footer{
     grid-column: 1 / 10;
-    text-align: center;
-    text-shadow: 2px 2px 3px rgb(133, 155, 92);
-
 }
 input[type=text], select, textarea {
     width: 100%; 
