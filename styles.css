@@ -5,10 +5,26 @@ body{
 h1{
     text-shadow: 2px 2px 3px rgb(133, 155, 92);
 }
-h1, h4, h2, h3{
+.navbar-brand{
+    font-family: cursive;
+    color: rgb(45, 74, 179);
+}
+.container-fluid{
+    text-align: center;
+}
+h4, h2, h3{
     font-family: cursive;
     text-align: center;
     color: rgb(45, 74, 179);
+    animation-name: changeColors;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+@keyframes changeColors{
+    0% {color: rgb(246, 85, 136);}
+    25% {color: rgb(246, 222, 85);}
+    50% {color: rgb(39, 201, 71);}
+    100% {color: rgb(53, 102, 227);}
 }
 p{
     color: rgb(36, 30, 37);
@@ -22,6 +38,9 @@ table{
 th, td{
     border: dotted 3px rgb(190, 209, 255);
 
+}
+a:hover{
+    color: rgb(255, 0, 128);
 }
 img{
     display: block;
@@ -55,9 +74,6 @@ img{
         width: auto;
     }
 }
-a:hover{
-    color: rgb(226, 43, 198);
-}
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -74,20 +90,13 @@ a:hover{
     gap: 4px;
     grid-auto-rows: minmax(100px, auto);
 }
-.header {
-    grid-column: 1 / 10;
-    grid-row: 1;
-}
-.sidebar {
-    grid-column: 1;
-    grid-row: 2 / 7;
-}
 .one {
-    grid-row: 2 / 7;
-    grid-column: 2 / 10;
+    grid-row: 1 / 10;
+    grid-column: 1 / 10;
 }
 .footer{
     grid-column: 1 / 10;
+    text-align: center;
     text-shadow: 2px 2px 3px rgb(133, 155, 92);
 
 }
